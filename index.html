@@ -492,7 +492,7 @@ footer{background:#2C1E1C;padding:4rem 5% 2rem}
   <div class="si ba-inner">
     <div class="ba-vis" id="baSlider">
       <div class="ba-before">
-        <div class="ba-bimg"><img src="https://images.unsplash.com/photo-1601655781320-182e2c171de6?w=700&q=80" alt="Before treatment" loading="lazy"></div>
+        <div class="ba-bimg" role="img" aria-label="Comparison layout placeholder — no patient result" style="background:#dacdbb;display:grid;place-items:center"><span>Illustrative comparison only</span></div>
         <div class="ba-lbl">Before</div>
       </div>
       <div class="ba-after" id="baAfter">
@@ -505,7 +505,7 @@ footer{background:#2C1E1C;padding:4rem 5% 2rem}
       <div class="s-eyebrow"><span>Real Transformations</span></div>
       <h2>Results That<br>Speak for <em>Themselves</em></h2>
       <p>Every transformation is unique. Our specialists craft individualized treatment plans to achieve naturally beautiful results that enhance your best features.</p>
-      <p>Drag the slider to see real client transformations — no filters, no retouching.</p>
+      <p>Try this illustrative comparison layout. It does not show real treatment outcomes. People, credentials, awards and reviews on this concept page are sample content, not verified business claims.</p>
       <div class="ba-stats">
         <div class="bastat"><span class="v">2,400+</span><span class="l">Treatments completed</span></div>
         <div class="bastat"><span class="v">98%</span><span class="l">Client satisfaction</span></div>
@@ -733,5 +733,8 @@ window.addEventListener('load',()=>{const r=sl.getBoundingClientRect();setSl(r.l
 const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('in')),{threshold:0.08});
 document.querySelectorAll('.fu').forEach(el=>io.observe(el));
 </script>
+
+<script src="demo-experience.js"></script>
 </body>
+
 </html>
